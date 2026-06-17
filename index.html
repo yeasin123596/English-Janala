@@ -121,21 +121,30 @@
         </div>
     </section>
     
-    <section class=" mt-10  md:px-20 md:mx-auto" >
+    <section class=" mt-10 mb-[255px] md:px-20 md:mx-auto" >
+        
         <div id="word-container" class="bg-gray-100 rounded-xl p-8 grid grid-cols-3 gap-8">
-            <!-- <div class="rounded-xl p-14 text-center bg-white">
-             
-                <h2 class="font-bold text-3xl">Diligent</h2>
-                <p class="my-6 font-medium text-xl text-">Meaning /Pronounciation</p>
-                <div class="font-bangla text-3xl font-semibold text-[#18181B] ">
-                    "আগ্রহী / ইগার"
-                </div>
-                <div class="icons flex justify-between mt-14">
-                    <div class="bg-[#1a90ff5e] p-4 rounded-xl"><i class="fa-solid fa-circle-info text-2xl"></i></div>
-                    <div class="bg-[#1a90ff5e] p-4 rounded-xl"><i class="fa-solid fa-volume-high text-2xl"></i></div>
-                </div>
-            </div> -->
+            <div class="text-center  col-span-full space-y-6 p-10">
+                <p class="text-[#79716B] font-bangla">আপনি এখনো কোন Lesson Select করেন নি</p>
+                <h2 class="text-[#292524] text-4xl font-medium font-bangla">একটি Lesson Select করুন।</h2>
+            </div>
         </div>
+
+        <!-- Open the modal using ID.showModal() method -->
+        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+        <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <div id="details-container" class="space-y-6 p-5">
+                </div>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn  btn-primary ">Complete Learning</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+
 
     </section>
     
